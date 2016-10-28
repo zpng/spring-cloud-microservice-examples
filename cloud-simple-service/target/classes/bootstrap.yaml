@@ -1,8 +1,16 @@
 spring.cloud.config.uri: http://127.0.0.1:${config.port:8888}
-spring.cloud.config.name: simple-service
+spring.cloud.config.name: cloud-simple-service
 spring.cloud.config.profile: ${config.profile:dev}
 #service discovery url
 eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
 #service name
 spring.application.name: cloud-simple-service
 server.port: 8081
+
+spring.rabbitmq.host: localhost
+spring.rabbitmq.port: 5672
+spring.rabbitmq.username: guest
+spring.rabbitmq.password: guest
+
+
+
