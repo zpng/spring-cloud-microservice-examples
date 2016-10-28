@@ -1,7 +1,0 @@
-server.port: 8888
-spring.cloud.config.server.git.uri: https://github.com/zpng/spring-cloud-config-demo.git
-spring.cloud.config.server.git.searchPaths: cloud-config-repo
-eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
-spring.application.name: cloud-config-server
-
-
