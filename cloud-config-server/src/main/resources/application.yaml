@@ -4,8 +4,4 @@ spring.cloud.config.server.git.searchPaths: cloud-config-repo
 eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
 spring.application.name: cloud-config-server
 
-spring.rabbitmq.host: localhost
-spring.rabbitmq.port: 5672
-spring.rabbitmq.username: guest
-spring.rabbitmq.password: guest
 
