@@ -1,7 +1,5 @@
 
 .idea/
-spring-cloud-microservice-examples.iml
-*/*.iml
 /cloud-config-server/target/
 /cloud-eureka-server/target/
 /cloud-simple-service/target/
