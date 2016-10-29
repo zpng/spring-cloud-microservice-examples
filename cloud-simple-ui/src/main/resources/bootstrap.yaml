@@ -1,5 +1,5 @@
 spring.cloud.config.uri: http://127.0.0.1:${config.port:8888}
-spring.cloud.config.name: simple-service
+spring.cloud.config.name: cloud-simple-service
 spring.cloud.config.profile: ${config.profile:dev}
 eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
 #service name

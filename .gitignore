@@ -6,3 +6,4 @@
 /cloud-simple-ui/target/
 cloud-simple-serviceB/target/
 cloud-api-gateway/target/
+cloud-zipkin/target/

@@ -25,7 +25,7 @@ public class UserService {
     RestTemplate restTemplate;
 
 
-    final String SERVICE_NAME = "simple-service";
+    final String SERVICE_NAME = "cloud-simple-service";
 
     @HystrixCommand(fallbackMethod = "fallbackSearchAll")
     public List<User> readUserInfo() {
