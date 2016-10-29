@@ -13,6 +13,8 @@
         <module>cloud-eureka-server</module>
         <module>cloud-simple-service</module>
         <module>cloud-simple-ui</module>
+        <module>cloud-api-gateway</module>
+        <module>cloud-simple-serviceB</module>
     </modules>
 
 

@@ -4,3 +4,5 @@
 /cloud-eureka-server/target/
 /cloud-simple-service/target/
 /cloud-simple-ui/target/
+cloud-simple-serviceB/target/
+cloud-api-gateway/target/
