@@ -14,5 +14,6 @@ zuul.routes.api-b.path: /cloud-simple-serviceB/**
 zuul.routes.api-b.serviceId: cloud-simple-serviceB
  ```
  分别请求到  注册到eureka server的cloud-simple-service 和 cloud-simple-serviceB服务。
- 例如 
+ 服务的架构图:
+ ![流程图](https://docs.google.com/drawings/d/1kb_2cLW-KcwhWfmu-iburNTCKKuH7HGUEdQCKCZMgZE/pub?w=960&h=720)
 
