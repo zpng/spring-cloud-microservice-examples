@@ -17,3 +17,22 @@ zuul.routes.api-b.serviceId: cloud-simple-serviceB
  服务的架构图:
  ![流程图](https://docs.google.com/drawings/d/1kb_2cLW-KcwhWfmu-iburNTCKKuH7HGUEdQCKCZMgZE/pub?w=960&h=720)
 
+---
+## 使用指南
+  ```
+  cd cloud-api-gateway
+  mvn spring-boot:run
+  cd cloud-config-server
+  mvn spring-boot:run
+  cd cloud-eureka-server
+  mvn spring-boot:run
+  cd cloud-simple-service
+  mvn spring-boot:run
+  cd cloud-simple-service
+  mvn spring-boot:run --server.port=8082  # cloud-simple-service 以8082端口再次启动服务
+  cd cloud-simple-ui
+  mvn spring-boot:run
+  cd cloud-zipkin
+  mvn spring-boot:run
+  ```
+  
