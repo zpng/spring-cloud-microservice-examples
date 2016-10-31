@@ -16,6 +16,7 @@
         <module>cloud-api-gateway</module>
         <module>cloud-simple-serviceB</module>
         <module>cloud-zipkin</module>
+        <module>cloud-hystrix-dashboard</module>
     </modules>
 
 
