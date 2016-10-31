@@ -8,3 +8,4 @@ cloud-simple-serviceB/target/
 cloud-api-gateway/target/
 cloud-zipkin/target/
 cloud-hystrix-dashboard/target/
+cloud-hystrix-turbine/target/

@@ -17,6 +17,7 @@
         <module>cloud-simple-serviceB</module>
         <module>cloud-zipkin</module>
         <module>cloud-hystrix-dashboard</module>
+        <module>cloud-hystrix-turbine</module>
     </modules>
 
 
