@@ -19,6 +19,26 @@ zuul.routes.api-b.serviceId: cloud-simple-serviceB
 
 ---
 ## 使用指南
+  * 先决条件
+  本机安装rabbitmq,并启动
+  ```
+  rabbitmq-server
+  ```
+  本机安装mysql,并启动且创建dev和test数据库,并分别创建表
+  ```
+  mysql.server start
+  mysql -uroot
+    CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+   dev数据库的user表中插入数据
+   INSERT INTO `user` VALUES (1,'dev1'),(2,'dev2'),(3,'dev3');
+   test数据库的user表中插入数据
+   INSERT INTO `user` VALUES (1,'test1'),(2,'test2'),(3,'test3');
+  ```
+
+ * 运行各模块
   ```
   cd cloud-api-gateway
   mvn spring-boot:run
@@ -35,4 +55,56 @@ zuul.routes.api-b.serviceId: cloud-simple-serviceB
   cd cloud-zipkin
   mvn spring-boot:run
   ```
+ * 打开浏览器输入网址并浏览效果
+ ```
+  查看Eureka Server
+  http://localhost:8761 #查看eureka
+ ```
+  ![Eureka Server](https://drive.google.com/uc?id=0BxyRSlBgU-ShX1dEdG5YSi10OEE)
+
+  ---
+  ```
+  请求simple service, simple service2, simple serviceB
+  http://localhost:8081/user  #simple service
+  结果:
+  [
+    {
+        id: 1,
+        username: "test1"
+    },
+    {
+        id: 2,
+        username: "test2"
+    },
+    {
+        id: 3,
+        username: "test3"
+    }
+  ]
+  http://localhost:8082/user  #simple service2
+  结果:
+  [
+    {
+        id: 1,
+        username: "test1"
+    },
+    {
+        id: 2,
+        username: "test2"
+    },
+    {
+        id: 3,
+        username: "test3"
+    }
+  ]
+  http://localhost:8091/user  #simple serviceB
+  结果:
+  Result from simpleserviceB
+  ```
+---
+ 本项目实现了通过spring-cloud-bus, 传播config-server中config的变化.下面动手验证之.
+  ```
+
+  ```
+
   
