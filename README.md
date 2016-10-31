@@ -103,8 +103,34 @@ zuul.routes.api-b.serviceId: cloud-simple-serviceB
   ```
 ---
  本项目实现了通过spring-cloud-bus, 传播config-server中config的变化.下面动手验证之.
-  ```
+    1. 下载配置git repository
+    ```
+    git clone git@github.com:zpng/spring-cloud-config-demo.git
+    ```
+    根目录下有个cloud-config-repo目录,该目录下有两个文件:
+    cloud-simple-service-dev.properties
+    cloud-simple-service-test.properties
+    分别是cloud-simple-service在 dev和test环境下的配置信息
+    cloud-simple-service-dev.properties内容:
+    ```
+    mysqldb.datasource.url=jdbc\:mysql\://localhost\:3306/test?useUnicode\=true&characterEncoding\=utf-8
 
-  ```
+    mysqldb.datasource.username=root
+
+    mysqldb.datasource.password=
+
+    logging.level.org.springframework.web:DEBUG
+
+    ```
+    cloud-simple-service-test.properties内容:
+    ```
+    mysqldb.datasource.url=jdbc\:mysql\://localhost\:3306/test?useUnicode\=true&characterEncoding\=utf-8
+
+    mysqldb.datasource.username=root
+
+    mysqldb.datasource.password=
+
+    logging.level.org.springframework.web:DEBUG
+    ```
 
   
