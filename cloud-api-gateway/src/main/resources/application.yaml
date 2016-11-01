@@ -8,9 +8,8 @@ zuul.routes.api-a.serviceId: cloud-simple-service
 zuul.routes.api-b.path: /cloud-simple-serviceB/**
 zuul.routes.api-b.serviceId: cloud-simple-serviceB
 
-# routes to url
-#zuul.routes.api-a-url.path=/api-a-url/**
-#zuul.routes.api-a-url.url=http://localhost:2222/
+zuul.routes.api-ui.path: /cloud-simple-ui/**
+zuul.routes.api-ui.serviceId: cloud-simple-ui
 
 eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
 
