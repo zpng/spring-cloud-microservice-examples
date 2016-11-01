@@ -2,7 +2,8 @@
 spring-cloud-microservice-examples
 
 ## 说明
-  目前该项目实现了 zuul(路由模块), config-server(配置管理), eureka server（服务注册和发现）, zipkin（服务调用追踪）, simple-service,simple-serviceB两个待发现的服务
+  目前该项目实现了 zuul(路由模块), config-server(配置管理), eureka server（服务注册和发现）, zipkin（服务调用追踪）,hystrix, turbine stream (熔断分析)
+  simple-service,simple-serviceB两个待发现的服务
   simple-ui (一个用angular写的前端页面)
   
   路由功能实现在 cloud-api-gateway 模块，注册到eureka server上面，所有的请求访问 http://localhost:5555, 然后根据路由规则
