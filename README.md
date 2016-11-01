@@ -12,6 +12,9 @@ zuul.routes.api-a.serviceId: cloud-simple-service
 
 zuul.routes.api-b.path: /cloud-simple-serviceB/**
 zuul.routes.api-b.serviceId: cloud-simple-serviceB
+
+zuul.routes.api-ui.path: /cloud-simple-ui/**
+zuul.routes.api-ui.serviceId: cloud-simple-ui
  ```
  分别请求到  注册到eureka server的cloud-simple-service 和 cloud-simple-serviceB服务。
  服务的架构图:
@@ -270,6 +273,11 @@ zuul.routes.api-b.serviceId: cloud-simple-serviceB
     ```
     http://localhost:9966
     ```
-    ![zipkin 动图](http://g.recordit.co/fCVfqKO4y9.gif)
+
+  trace如下图:
+    ![zipkin-simple-ui-trace](https://drive.google.com/uc?id=0BxyRSlBgU-Shb3Bab2sxN1lUSE0)
+    dependencies如下图:
+    ![zipkin-dependencies](https://drive.google.com/uc?id=0BxyRSlBgU-ShLWJDRGd1VUhMWHc)
+
 
   
