@@ -18,6 +18,9 @@
         <module>cloud-zipkin</module>
         <module>cloud-hystrix-dashboard</module>
         <module>cloud-hystrix-turbine</module>
+        <module>cloud-thrift-client</module>
+        <module>cloud-thrift-interface</module>
+        <module>cloud-thrift-server</module>
     </modules>
 
 

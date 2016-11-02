@@ -9,3 +9,6 @@ cloud-api-gateway/target/
 cloud-zipkin/target/
 cloud-hystrix-dashboard/target/
 cloud-hystrix-turbine/target/
+cloud-thrift-client/target/
+cloud-thrift-interface/target/
+cloud-thrift-server/target/
