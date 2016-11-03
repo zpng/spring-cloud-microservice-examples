@@ -27,6 +27,7 @@
     <orderEntry type="library" name="Maven: com.twitter:util-stats_2.11:6.37.0" level="project" />
     <orderEntry type="library" name="Maven: com.github.ben-manes.caffeine:caffeine:2.3.3" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty:3.10.1.Final" level="project" />
     <orderEntry type="library" name="Maven: com.twitter:util-codec_2.11:6.37.0" level="project" />
     <orderEntry type="library" name="Maven: com.twitter:util-collection_2.11:6.37.0" level="project" />
     <orderEntry type="library" name="Maven: com.twitter:util-logging_2.11:6.37.0" level="project" />
@@ -50,19 +51,6 @@
     <orderEntry type="library" name="Maven: com.twitter:scrooge-core_2.11:4.10.0" level="project" />
     <orderEntry type="module" module-name="cloud-finagle-thrift-api" />
     <orderEntry type="library" name="Maven: com.twitter:scrooge-runtime_2.11:3.20.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:finagle-core_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty:3.5.12.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-core_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-collection_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-hashing_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-jvm_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-logging_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-app_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:ostrich_2.10:9.1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-eval_2.10:6.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.scala-lang:scala-compiler:2.10.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:scala-json_2.10:3.0.1" level="project" />
     <orderEntry type="module" module-name="cloud-finagle-commons-thrift" />
     <orderEntry type="library" name="Maven: com.twitter:finagle-serversets_2.11:6.27.0" level="project" />
     <orderEntry type="library" name="Maven: com.twitter.common.zookeeper:server-set:1.0.103" level="project" />

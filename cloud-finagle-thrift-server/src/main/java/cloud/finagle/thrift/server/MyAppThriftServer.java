@@ -13,8 +13,6 @@ import com.twitter.finagle.builder.ServerBuilder;
 import com.twitter.finagle.stats.JavaLoggerStatsReceiver;
 import com.twitter.finagle.thrift.ThriftServerFramedCodec;
 import com.twitter.finagle.tracing.Tracer;
-import com.twitter.ostrich.admin.AdminHttpService;
-import com.twitter.ostrich.admin.RuntimeEnvironment;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import zipkin.finagle.http.HttpZipkinTracer;
 
@@ -61,10 +59,10 @@ public class MyAppThriftServer {
 
         System.out.println("The server, running from port "+port+" joined the FooService cluster.");
 
-        int ostrichPort = port + 1;
-        RuntimeEnvironment runtime = new RuntimeEnvironment("");
-        AdminHttpService admin = new AdminHttpService(ostrichPort, 0, runtime);
-        admin.start();
-        System.out.println("Ostrich reporting started on port "+ostrichPort);
+//        int ostrichPort = port + 1;
+//        RuntimeEnvironment runtime = new RuntimeEnvironment("");
+//        AdminHttpService admin = new AdminHttpService(ostrichPort, 0, runtime);
+//        admin.start();
+//        System.out.println("Ostrich reporting started on port "+ostrichPort);
     }
 }
