@@ -12,3 +12,7 @@ cloud-hystrix-turbine/target/
 cloud-thrift-client/target/
 cloud-thrift-interface/target/
 cloud-thrift-server/target/
+cloud-finagle-commons-thrift/target/
+cloud-finagle-thrift-api/target/
+cloud-finagle-thrift-client/target/
+cloud-finagle-thrift-server/target/

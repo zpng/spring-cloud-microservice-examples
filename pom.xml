@@ -21,6 +21,10 @@
         <module>cloud-thrift-client</module>
         <module>cloud-thrift-interface</module>
         <module>cloud-thrift-server</module>
+        <module>cloud-finagle-thrift-client</module>
+        <module>cloud-finagle-thrift-api</module>
+        <module>cloud-finagle-thrift-server</module>
+        <module>cloud-finagle-commons-thrift</module>
     </modules>
 
 
@@ -109,6 +113,12 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+        </repository>
+
+         <!--repository for finagle-->
+        <repository>
+            <id>Twitter</id>
+            <url>http://maven.twttr.com/</url>
         </repository>
     </repositories>
     <pluginRepositories>
