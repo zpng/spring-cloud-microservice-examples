@@ -12,21 +12,49 @@
     <artifactId>cloud-finagle-thrift-client</artifactId>
 
 
+    <properties>
+        <scala.binary.version>2.11</scala.binary.version>
+    </properties>
+
     <dependencies>
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>finagle-http_${scala.binary.version}</artifactId>
+            <version>6.38.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.zipkin.finagle</groupId>
+            <artifactId>zipkin-finagle-http_${scala.binary.version}</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>finagle-thrift_2.11</artifactId>
+            <version>6.38.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.zpng</groupId>
             <artifactId>cloud-finagle-thrift-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.twitter</groupId>
-            <artifactId>finagle-thrift_2.10</artifactId>
-            <version>6.3.0</version>
-        </dependency>
+
         <dependency>
             <groupId>org.zpng</groupId>
             <artifactId>cloud-finagle-commons-thrift</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+
+
+        <!--zipkin跟踪-->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.cloud</groupId>-->
+        <!--<artifactId>spring-cloud-starter-sleuth</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.cloud</groupId>-->
+        <!--<artifactId>spring-cloud-sleuth-zipkin</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 </project>

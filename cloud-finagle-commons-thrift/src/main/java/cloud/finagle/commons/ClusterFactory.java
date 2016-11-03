@@ -58,7 +58,7 @@ public class ClusterFactory {
                     // do nothing
                 }
             });
-            return JavaConversions.asJavaList(cluster.snap()._1());
+            return JavaConversions.seqAsJavaList(cluster.snap()._1());
         } catch (DynamicHostSet.MonitorException e) {
             throw new RuntimeException("Couldn't get list of online servers", e);
         }

@@ -11,61 +11,86 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="cloud-finagle-thrift-api" />
-    <orderEntry type="library" name="Maven: com.twitter:scrooge-runtime_2.10:3.1.1" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-codec_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:finagle-thrift_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:finagle-core_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty:3.5.12.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-core_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-collection_2.10:6.3.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:finagle-http_2.11:6.38.0" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.11.8" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:finagle-core_2.11:6.38.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-app_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-cache_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-core_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-function_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-reflect:2.11.8" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-hashing_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-jvm_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-lint_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-registry_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-stats_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ben-manes.caffeine:caffeine:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty:3.10.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-codec_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-collection_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-logging_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-hashing_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-jvm_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-logging_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter:util-app_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.10.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.thrift:libthrift:0.5.0" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.finagle:zipkin-finagle-http_2.11:0.3.0" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.finagle:zipkin-finagle_2.11:0.3.0" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.finagle:zipkin-finagle_2.11:test-jar:tests:0.3.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:finagle-zipkin-core_2.11:6.38.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-events_2.11:6.37.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-scala_2.11:2.6.5" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-paranamer:2.6.5" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.paranamer:paranamer:2.6" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.reporter:zipkin-reporter:0.6.1" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.java:zipkin:1.13.1" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.java:zipkin:test-jar:tests:1.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:finagle-thrift_2.11:6.38.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.thrift:libthrift:0.5.0-1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
-    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.5" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:scrooge-core_2.11:4.10.0" level="project" />
+    <orderEntry type="module" module-name="cloud-finagle-thrift-api" />
+    <orderEntry type="library" name="Maven: com.twitter:scrooge-runtime_2.11:3.20.0" level="project" />
     <orderEntry type="module" module-name="cloud-finagle-commons-thrift" />
-    <orderEntry type="library" name="Maven: com.twitter:finagle-serversets_2.10:6.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common.zookeeper:server-set:1.0.23" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common.zookeeper:client:0.0.21" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:net-util:0.0.43" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:quantity:0.0.39" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common.zookeeper:group:0.0.27" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:args:0.1.51" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:args-apt:0.0.30" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:args-core:0.0.18" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:base:0.0.51" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:util-system-mocks:0.0.39" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:io:0.0.31" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:finagle-serversets_2.11:6.27.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common.zookeeper:server-set:1.0.103" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common.zookeeper:client:0.0.76" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:net-util:0.0.97" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:quantity:0.0.96" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common.zookeeper:group:0.0.87" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:args:0.2.35" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:args-apt:0.1.33" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:args-core:0.1.33" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:base:0.0.112" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:util-system-mocks:0.0.101" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:io:0.0.65" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:io-json:0.0.51" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:io-thrift:0.0.64" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:dynamic-host-set:0.0.53" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:util:0.0.118" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:util-executor-service-shutdown:0.0.64" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:jdk-logging:0.0.76" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:collections:0.0.106" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:stats:0.0.112" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:stat-registry:0.0.53" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:stat:0.0.68" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:stats-provider:0.0.88" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:application-action:0.0.87" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:util-sampler:0.0.75" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter.common:service-thrift:1.0.54" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:io-json:0.0.21" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:io-thrift:0.0.30" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-jdk14:1.7.21" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:dynamic-host-set:0.0.24" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:util:0.0.57" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:util-executor-service-shutdown:0.0.21" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:jdk-logging:0.0.22" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:collections:0.0.43" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:stats:0.0.57" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:stat-registry:0.0.8" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:stat:0.0.8" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:stats-provider:0.0.31" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:application-action:0.0.39" level="project" />
     <orderEntry type="library" name="Maven: com.google.inject:guice:3.0" level="project" />
-    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:util-sampler:0.0.30" level="project" />
-    <orderEntry type="library" name="Maven: com.twitter.common:service-thrift:1.0.6" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.7" level="project" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.3.4" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-jdk14:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.7" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:finagle-test_2.11:6.27.0" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-zk-common_2.11:6.26.0" level="project" />
+    <orderEntry type="library" name="Maven: com.twitter:util-zk_2.11:6.26.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.4.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.4.1.RELEASE" level="project" />
@@ -87,7 +112,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.3.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.3" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.3.RELEASE" level="project" />
@@ -103,11 +127,11 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:5.0.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:2.5.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-core:1.10.19" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.objenesis:objenesis:2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-library:1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.skyscreamer:jsonassert:1.3.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.json:json:20140107" level="project" />

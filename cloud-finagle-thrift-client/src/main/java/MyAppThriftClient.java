@@ -12,14 +12,19 @@ import com.twitter.finagle.Service;
 import com.twitter.finagle.builder.ClientBuilder;
 import com.twitter.finagle.builder.Cluster;
 import com.twitter.finagle.stats.InMemoryStatsReceiver;
+import com.twitter.finagle.stats.JavaLoggerStatsReceiver;
 import com.twitter.finagle.thrift.ThriftClientFramedCodec;
 import com.twitter.finagle.thrift.ThriftClientRequest;
+import com.twitter.finagle.tracing.Tracer;
 import com.twitter.util.Duration;
 import org.apache.thrift.protocol.TBinaryProtocol;
+import zipkin.finagle.http.HttpZipkinTracer;
 
 import java.net.SocketAddress;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 /**
  * @author zhangpeng
@@ -33,11 +38,29 @@ public class MyAppThriftClient {
         List<SocketAddress> onlineServers = ClusterFactory.getOnlineServers("FooService");
         System.out.println("Online servers: "+onlineServers.toString());
 
+        // All servers need to point to the same zipkin transport
+        System.setProperty("zipkin.http.host", "localhost:9411"); // default
+
+        // It is unreliable to rely on implicit tracer config (Ex sometimes NullTracer is used).
+        // Always set the tracer explicitly. The default constructor reads from system properties.
+
+        HttpZipkinTracer.Config config = HttpZipkinTracer.Config.builder()
+                                                                // The frontend makes a sampling decision (via Trace.letTracerAndId) and propagates it downstream.
+                                                                // This property says sample 100% of traces.
+                                                                .initialSampleRate(1.0f)
+                                                                // All servers need to point to the same zipkin transport
+                                                                .host("127.0.0.1:9411").build();
+
+        Tracer tracer = HttpZipkinTracer.create(config,
+                // print stats about zipkin to the console
+                new JavaLoggerStatsReceiver(Logger.getAnonymousLogger()));
+
         Service<ThriftClientRequest, byte[]> service =
                 ClientBuilder.safeBuild(ClientBuilder.get()
                                                      .cluster(cluster) // this is where service discovery happens
                                                      .name("FooService client")
                                                      .codec(ThriftClientFramedCodec.get())
+                                                     .tracer(tracer)
                                                      .timeout(Duration.apply(2, TimeUnit.SECONDS))
                                                      .retries(4)
                                                      .hostConnectionLimit(1)
@@ -54,7 +77,14 @@ public class MyAppThriftClient {
         // Do some stuff
         for (int i = 0; i < 20; i++) {
             // Call .get() on the future to wait for it to return a value
-            Foo foo = client.giveMeSomeFoo(i).get();
+            Foo foo = null;
+            try {
+                foo = client.giveMeSomeFoo(i).toJavaFuture().get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
             System.out.println("Got "+foo.getBazz());
             // (or use functional programming so you don't block the thread)
         }

@@ -9,3 +9,5 @@ service.name: cloud-thrift-server
 zookeeper.server.list: localhost:2181
 server:
   port: 8070
+
+

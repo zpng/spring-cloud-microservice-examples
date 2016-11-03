@@ -15,8 +15,8 @@
     <dependencies>
         <dependency>
             <groupId>com.twitter</groupId>
-            <artifactId>finagle-serversets_2.10</artifactId>
-            <version>6.3.0</version>
+            <artifactId>finagle-serversets_2.11</artifactId>
+            <version>6.27.0</version>
         </dependency>
     </dependencies>
 </project>

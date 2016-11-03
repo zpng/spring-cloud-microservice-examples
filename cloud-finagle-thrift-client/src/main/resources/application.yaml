@@ -1,0 +1,12 @@
+#spring.zipkin.baseUrl: http://localhost:9966
+#spring.zipkin.enabled: true
+#spring:
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
+
+
+
+
+zipkin.http.host: localhost:9966
+zipkin.initialSampleRate: 1.0
