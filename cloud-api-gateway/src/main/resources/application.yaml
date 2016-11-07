@@ -13,5 +13,5 @@ zuul.routes.api-ui.serviceId: cloud-simple-ui
 
 eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/
 
-spring.zipkin.baseUrl: http://localhost:9966
+spring.zipkin.baseUrl: http://localhost:9411
 spring.zipkin.enabled: true
