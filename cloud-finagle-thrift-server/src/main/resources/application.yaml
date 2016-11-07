@@ -5,5 +5,5 @@
 #    sampler:
 #      percentage: 1.0
 
-zipkin.http.host: localhost:9966
+zipkin.http.host: localhost:9411
 zipkin.initialSampleRate: 1.0
