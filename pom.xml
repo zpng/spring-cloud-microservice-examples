@@ -64,9 +64,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-
-    </dependencies>
+</dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -80,9 +78,7 @@
         </dependencies>
     </dependencyManagement>
 
-
     <repositories>
-
         <repository>
             <id>spring-snapshots</id>
             <name>Spring Snapshots</name>
