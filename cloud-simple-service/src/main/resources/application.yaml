@@ -1,2 +1,6 @@
 spring.zipkin.baseUrl: http://localhost:9411
 spring.zipkin.enabled: true
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0

@@ -5,7 +5,7 @@ hystrix:
   links:
    - gateway
    - discovery
-   - rabbitmq
+#   - rabbitmq
 turbine:
   image: zpng/cloud-hystrix-turbine
   ports:
@@ -13,19 +13,19 @@ turbine:
   links:
    - gateway
    - discovery
-   - rabbitmq
+#   - rabbitmq
 discovery:
   image: zpng/cloud-eureka-server
   ports:
    - "8761:8761"
-   - rabbitmq
+#   - rabbitmq
 configserver:
   image: zpng/cloud-config-server
   ports:
    - "8888:8888"
   links:
    - discovery
-   - rabbitmq
+#   - rabbitmq
 gateway:
   image: zpng/cloud-api-gateway
   ports:
@@ -38,14 +38,14 @@ gateway:
    - simple-serviceb
    - simple-ui
    - zipkin
-   - rabbitmq
+#   - rabbitmq
 simple-service:
   image: zpng/cloud-simple-service
   links:
    - discovery
    - configserver
    - zipkin
-   - rabbitmq
+#   - rabbitmq
   ports:
    - "8081:8081"
 simple-service2:
@@ -54,7 +54,7 @@ simple-service2:
    - discovery
    - configserver
    - zipkin
-   - rabbitmq
+#   - rabbitmq
   ports:
    - "8082:8082"
 simple-serviceb:
@@ -63,7 +63,7 @@ simple-serviceb:
    - discovery
    - configserver
    - zipkin
-   - rabbitmq
+#   - rabbitmq
   ports:
    - "8091:8091"
 simple-ui:
@@ -72,7 +72,7 @@ simple-ui:
    - discovery
    - configserver
    - zipkin
-   - rabbitmq
+#   - rabbitmq
   ports:
    - "8090:8090"
 zipkin:
@@ -80,13 +80,13 @@ zipkin:
   links:
    - discovery
    - configserver
-   - rabbitmq
+#   - rabbitmq
   ports:
    - "9411:9411"
-rabbitmq:
-  image: rabbitmq:management
-  expose:
-    - 5672
-  ports:
-    - "5672:5672"
-    - "15672:15672"
+#rabbitmq:
+#  image: rabbitmq:management
+#  expose:
+#    - 5672
+#  ports:
+#    - "5672:5672"
+#    - "15672:15672"
