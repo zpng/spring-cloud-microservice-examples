@@ -25,6 +25,8 @@
         <module>cloud-finagle-thrift-api</module>
         <module>cloud-finagle-thrift-server</module>
         <module>cloud-finagle-commons-thrift</module>
+        <module>cloud-uaa-service</module>
+        <module>cloud-dummy-service</module>
     </modules>
 
 

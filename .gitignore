@@ -16,3 +16,5 @@ cloud-finagle-commons-thrift/target/
 cloud-finagle-thrift-api/target/
 cloud-finagle-thrift-client/target/
 cloud-finagle-thrift-server/target/
+cloud-dummy-service/target/
+cloud-uaa-service/target/
